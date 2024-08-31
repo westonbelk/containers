@@ -8,7 +8,7 @@ RUN apt-get update \
     && rm ./speedtest-cli.deb.sh \
     && apt-get update \
     && apt-get install -y \
-        speedtest-cli \
+        speedtest \
     && rm -rf /var/lib/apt/lists/*
 
-CMD ["/usr/bin/speedtest-cli"]
+CMD ["/usr/bin/speedtest"]
